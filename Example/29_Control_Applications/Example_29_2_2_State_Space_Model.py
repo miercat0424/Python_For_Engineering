@@ -21,6 +21,7 @@ plt.plot(t,y[0][1])
 # Convert State space model to Transfer Fuction(s)
 H = control.ss2tf(ssmodel)
 
+print(H)
 
 plt.show()
 
