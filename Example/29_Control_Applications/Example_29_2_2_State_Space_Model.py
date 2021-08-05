@@ -12,8 +12,8 @@ ssmodel = control.ss(A,B,C,D)
 # Step response for the system
 t , y = control.step_response(ssmodel)
 
-print(f"t (Blue)  : {np.shape(t)}\
-    \ny (Orange) : {np.shape(y)}")
+print(f"\nt (Blue)   [1] : {np.shape(t)}\
+    \ny (Orange) [2] : {np.shape(y)}")
 
 plt.plot(t,y[0][0])
 plt.plot(t,y[0][1])
@@ -24,5 +24,3 @@ H = control.ss2tf(ssmodel)
 print(H)
 
 plt.show()
-
-
