@@ -1,6 +1,6 @@
 import nidaqmx
 
-for _ in range(10) :
+for _ in range(1) :
     
     with nidaqmx.Task() as task :
         
