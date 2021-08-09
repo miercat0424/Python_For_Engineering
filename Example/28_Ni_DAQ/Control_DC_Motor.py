@@ -1,4 +1,3 @@
-from re import I
 import nidaqmx 
 import time
 import numpy as np 
