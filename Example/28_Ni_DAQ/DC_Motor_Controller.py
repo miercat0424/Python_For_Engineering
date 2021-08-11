@@ -2,7 +2,10 @@ import nidaqmx
 import time
 import numpy as np 
 
+# ----------Devices------------
 # USB - 6211 Type DAQ
+# L298N Motor Controller
+# -----------------------------
 
 with nidaqmx.Task() as task1 , nidaqmx.Task() as task2 :
     task1.do_channels.add_do_chan("Dev2/port1/line0","") # <-- PFI4 OUT port
