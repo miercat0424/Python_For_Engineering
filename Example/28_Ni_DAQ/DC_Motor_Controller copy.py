@@ -23,26 +23,24 @@ with nidaqmx.Task() as task1 , nidaqmx.Task() as task2 , nidaqmx.Task() as task3
 
         
         # PFI4 out --> IN4
-        # PFI6 out --> IN1
         print(f"Motor CW On")
         task1.write(True)
         task3.write(True)
         time.sleep(2)
-        
+        # print(f"Motor CW Off")
         task1.write(False)
         task3.write(False)
-
+        # time.sleep(2)
 
         # PFI5 out --> IN5
-        # PFI7 out --> IN2
         print(f"Motor CCW on")
         task2.write(True)
         task4.write(True)
         time.sleep(2)
-        
+        # print(f"Motor CCW off")
         task2.write(False)
         task4.write(False)
-
+        # time.sleep(2)
 
         print(f"{count} -------------------\n")
     
